@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<roles>
+	<role>
+		<id>1</id>
+		<name>HR</name>
+		<rank>1</rank>
+		<admin>true</admin>
+	</role>
+	<role>
+		<id>2</id>
+		<name>Manager</name>
+		<rank>2</rank>
+		<admin>true</admin>
+	</role>
+	<role>
+		<id>3</id>
+		<name>Team Leader</name>
+		<rank>3</rank>
+		<admin>false</admin>
+	</role>
+	<role>
+		<id>4</id>
+		<name>SSE</name>
+		<rank>4</rank>
+		<admin>false</admin>
+	</role>
+	<role>
+		<id>5</id>
+		<name>SE</name>
+		<rank>5</rank>
+		<admin>false</admin>
+	</role>
+	<role>
+		<id>6</id>
+		<name>Trainee</name>
+		<rank>6</rank>
+		<admin>false</admin>
+	</role>
+</roles>

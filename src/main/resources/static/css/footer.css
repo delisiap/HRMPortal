@@ -1,0 +1,26 @@
+.footerElement {
+	font-size: 0.8em;
+	background-color: #1e2833;
+	height: 6vh;
+	display: flex;
+	color: white;
+}
+
+.footerElementRight {
+	margin: auto 15px auto auto;
+}
+
+.footerElementLeft {
+	margin: auto 0 auto 15px;
+}
+
+.footerElement a {
+	padding-left: 10px;
+	margin-left: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+.footerElementLeft a {
+	border-left: 1px solid #18d26e;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HRMPortal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" th:href="@{/css/fonts.css}">
+	<link rel="stylesheet" th:href="@{/css/header.css}">
+	<link rel="stylesheet" th:href="@{/css/footer.css}">
+	<link rel="stylesheet" th:href="@{/css/homepage.css}">
+	<link rel="stylesheet" th:href="@{/css/globalpage.css}">
+	<link rel="stylesheet" th:href="@{/css/processleave.css}">
+
+	<!-- Favicon -->
+	<link href="images/favicon.ico" rel="icon">
+
+	<!-- External JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	 crossorigin="anonymous"></script>
+
+	<!-- JS Files -->
+	<script src="/js/wrapper.js"></script>
+	<script src="/js/globalConstants.js"></script>
+	<script src="/js/homepage.js"></script>
+	<script src="/js/headerFunctionalities.js"></script>
+	<script src="/js/viewLeaveStatus.js"></script>
+
+</head>
+
+<body>
+	<div class="globalnavbar">
+		<a class="HRMLogo NavBarHRMLogo" href="homepage.html">HRMPortal</a>
+		<span class="navbarright">
+			<span class="dropdown">
+				<button class="dropbtn">Profile
+					<i class="fa fa-caret-down"></i>
+					<span class="dropdown-content">
+						<a href="viewProfile.html">View Profile</a>
+					</span>
+				</button>
+			</span>
+			<span class="dropdown">
+				<button class="dropbtn">Leave
+					<i class="fa fa-caret-down"></i>
+					<span class="dropdown-content">
+						<a href="applyLeave.html">Apply leave</a>
+						<a href="viewLeaveStatus.html">View Leave Status</a>
+					</span>
+				</button>
+			</span>
+			<span class="dropdown">
+				<button class="dropbtn">Accounts
+					<i class="fa fa-caret-down"></i>
+					<span class="dropdown-content">
+						<a href="downloadSalarySlip.html">Download Salary Slip</a>
+						<a href="downloadCTC.html">Download CTC</a>
+					</span>
+				</button>
+			</span>
+			<a href="javascript:onChangePasswordLinkClick()">Change Password</a>
+			<a href="javascript:onLogoutClick()">Logout</a>
+		</span>
+	</div>
+
+	<div class="bodyElement">
+		<h2 class="text-center heading processleave-heading">History Of Leaves</h2>
+		<div class="processleave" id="process-leave-div">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th scope="col">Start Date</th>
+						<th scope="col">End Date</th>
+						<th scope="col">Status</th>
+					</tr>
+				</thead>
+				<tbody id="table-body"></tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="footerElement">
+		<span class="footerElementLeft">
+			&copy; 2018 HRMPortal
+			<a href="#">About</a>
+		</span>
+		<span class="footerElementRight">
+			<a href="#" class="ext-link footerCopyright">
+				Designed by
+				<strong id="groupnumer">
+					<span>Group1</span>
+				</strong>
+			</a>
+		</span>
+	</div>
+</body>
+
+</html>

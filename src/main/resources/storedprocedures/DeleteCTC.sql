@@ -1,0 +1,9 @@
+DELIMITER $$
+CREATE PROCEDURE `delete_ctc`(
+	IN emp_id varchar(10),
+	IN ctc_year int
+)
+BEGIN
+	DELETE FROM EMPLOYEE_CTC WHERE EMPLOYEE_ID=emp_id AND CTC_YEAR=ctc_year;
+END$$
+DELIMITER ;

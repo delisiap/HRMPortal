@@ -1,0 +1,11 @@
+DELIMITER $$
+CREATE DEFINER=`CSCI5308_1_DEVINT_USER`@`%` PROCEDURE `get_remainingleavecount`(
+	IN emp_id varchar(10),
+    OUT emp_leaves int(11)
+)
+BEGIN
+	SELECT NO_OF_LEAVES
+	INTO emp_leaves 
+	FROM EMPLOYEE_INFO WHERE EMPLOYEE_INFO.EMPLOYEE_ID=emp_id;
+END$$
+DELIMITER ;

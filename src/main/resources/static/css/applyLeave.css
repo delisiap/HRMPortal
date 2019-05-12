@@ -1,0 +1,13 @@
+.uploadLeaveBody {
+	max-width: 70vw;
+	min-width: 670px;
+	width: 40vw;
+	background-color: white;
+	border-radius: 1em;
+	padding: 1.5em 3em 0.5em 3em;
+	margin: auto;
+}
+
+.button {
+	margin: 0.5em 2em 0.5em 13em;
+}

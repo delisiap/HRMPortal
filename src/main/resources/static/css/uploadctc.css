@@ -1,0 +1,47 @@
+.uploadDocHeader {
+	padding: 0.7rem;
+	background-color: #1e28333b;
+	font-size: 0.9em;
+	font-weight: 500;
+	color: #1e2833;
+}
+
+label.lbl.labelUploadDoc {
+	font-weight: 500;
+}
+.uploadsalary-btn-group {
+	display:flex;
+}
+
+.btnUploadDocGetDetails.btn {
+	color: white;
+	font-size: 1.1em;
+	padding: 0.5em;
+}
+
+.uploadDocHeaderDiv,
+.uploadDocBody {
+	padding: 1rem;
+}
+
+
+.uploadDocBody {
+	text-align: center;
+}
+
+.uploadDocHeaderDiv input, .uploadDocBody input {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+input[type=file].inputTxtUploadDocFile {
+	display: inline;
+}
+
+input {
+	color: #1e2833;
+}
+
+.uploadDocBody div {
+	margin: 1rem;
+}

@@ -1,0 +1,43 @@
+body {
+	background-color: lightgray;
+}
+
+.processleave-heading {
+	color: #1e2833;
+}
+
+h2 {
+	margin-top: 0px;
+}
+
+.processleave {
+	width: 70%;
+	min-width: 7em;
+	height: calc(100% - 14vh);
+	margin-left: auto;
+	margin-right: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: white;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 3em;
+}
+
+.btn-approve {
+	margin-right: 1em;
+	background-color: #398439;
+	border-color: #255625;
+}
+
+.btn-reject {
+	background-color: #ac2925;
+	border-color: #761c19;
+}
+
+.empty-p {
+	margin: auto;
+	font-size: 2em;
+	display: block;
+	width: fit-content;
+}

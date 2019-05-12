@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HRMPortal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" th:href="@{/css/fonts.css}">
+	<link rel="stylesheet" th:href="@{/css/header.css}">
+	<link rel="stylesheet" th:href="@{/css/footer.css}">
+	<link rel="stylesheet" th:href="@{/css/homepage.css}">
+	<link rel="stylesheet" th:href="@{/css/globalpage.css}">
+	<link rel="stylesheet" th:href="@{/css/adminpage.css}">
+
+	<!-- Favicon -->
+	<link href="images/favicon.ico" rel="icon">
+
+	<!-- External JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	 crossorigin="anonymous"></script>
+
+	<script src="/js/globalConstants.js"></script>
+	<script src="/js/wrapper.js"></script>
+	<script src="/js/addEmployee.js"></script>
+	<script src="/js/headerFunctionalities.js"></script>
+</head>
+
+<body>
+	<div class="globalnavbar">
+		<a class="HRMLogo NavBarHRMLogo" href="adminHomepage.html">HRMPortal</a>
+		<span class="navbarright">
+			<span class="dropdown">
+				<button class="dropbtn">Profile
+					<i class="fa fa-caret-down"></i>
+					<span class="dropdown-content">
+						<a href="adminViewProfile.html">View Profile</a>
+					</span>
+				</button>
+			</span>
+			<span class="dropdown">
+				<button class="dropbtn">Leave
+					<i class="fa fa-caret-down"></i>
+					<span class="dropdown-content">
+						<a href="adminApplyLeave.html">Apply Leave</a>
+						<a href="processLeave.html">Process Leave</a>
+					</span>
+				</button>
+			</span>
+			<span class="dropdown">
+				<button class="dropbtn">Admin
+					<i class="fa fa-caret-down"></i>
+					<span class="dropdown-content">
+						<a href="addEmployee.html">Add Employee</a>
+						<a href="removeEmployee.html">Remove Employee</a>
+					</span>
+				</button>
+			</span>
+			<span class="dropdown">
+				<button class="dropbtn">Accounts
+					<i class="fa fa-caret-down"></i>
+					<span class="dropdown-content">
+						<a href="adminDownloadSalarySlip.html">Download Salary Slip</a>
+						<a href="adminDownloadCTC.html">Download CTC</a>
+						<a href="uploadSalarySlip.html">Upload Salary Slip</a>
+						<a href="uploadCTC.html">Upload CTC</a>
+					</span>
+				</button>
+			</span>
+			<a href="javascript:onChangePasswordLinkClick()">Change Password</a>
+			<a href="javascript:onLogoutClick()">Logout</a>
+		</span>
+	</div>
+	<div class="bodyElement">
+		<h2 class="text-center heading">Add Employee</h2>
+		<form class="formbody" id="addEmployeeForm" name="addEmployeeForm" method="post">
+			<div class="clsInlineAlertMessage clsErrorMessage" id="errormessage" name="diverrormessage">
+				<span class="clsLeaveMessage" name="errorMesssage">Invalid credentials login failed.</span>
+				<input type="button" class="clsErrorMessageBtnClose" value="X" onclick="onErrorBtnCloseClick(this)">
+			</div>
+			<div class="form-group custom-form-group">
+				<label class="float-left label">Employee Id</label>
+				<input class="form-control float-right field" type="text" name="employeeId" required/>
+			</div>
+			<div class="form-group custom-form-group">
+				<label class="float-left label">Full Name</label>
+				<input class="form-control float-right field" type="text" name="employeeName" required>
+			</div>
+			<div class="form-group custom-form-group">
+				<label class="float-left label">Role Name</label>
+				<select class="form-control float-right field" type="text" name="roleName" id="roleName" placeholder="rolename" required></select>
+			</div>
+			<div class="form-group custom-form-group">
+				<label class="float-left label">Email Id</label>
+				<input class="form-control float-right field" type="email" name="emailId" required>
+			</div>
+			<div class="form-group custom-form-group">
+				<label class="float-left label">Date of Birth</label>
+				<input class="form-control float-right field" type="date" name="dateOfBirth" required>
+			</div>
+			<div class="form-group custom-form-group">
+				<label class="float-left label">Joining Date</label>
+				<input class="form-control float-righ field" type="date" name="dateOfJoining" required>
+			</div>
+			<div class="form-group custom-form-group">
+				<label class="float-left label">Number of Leaves</label>
+				<input class="form-control float-right field" type="number" name="noOfLeaves" required>
+			</div>
+			<div class="form-group custom-form-group">
+				<label class="float-left label">Contact Number</label>
+				<input class="form-control float-right field" type="number" name="phoneNo" required>
+			</div>
+			<div class="form-group custom-form-group">
+				<label class="float-left label">Alternate Email Id</label>
+				<input class="form-control float-right field" type="email" name="alternateEmailId">
+			</div>
+			<div class="form-group custom-form-group">
+				<label class="float-left label">Address</label>
+				<input class="form-control float-right field" type="text" name="address">
+			</div>
+			<button class="btn btn-primary float-left button">Add Employee</button>
+		</form>
+	</div>
+	<div class="footerElement">
+		<span class="footerElementLeft">&copy; 2018 HRMPortal
+			<a href="#">About</a>
+		</span>
+		<span class="footerElementRight">
+			<a href="#" class="ext-link footerCopyright">
+				Designed by
+				<strong id="groupnumer">
+					<span>Group1</span>
+				</strong>
+			</a>
+		</span>
+	</div>
+</body>
+
+</html>

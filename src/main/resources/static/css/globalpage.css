@@ -1,0 +1,229 @@
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 14.7px;
+}
+
+.bodyElement {
+	height: 83.98vh;
+	overflow: auto;
+}
+
+.btn {
+	background: #214a80;
+	border: none;
+	border-radius: 4px;
+	padding: 8px;
+	box-shadow: none;
+	text-shadow: none;
+	outline: 0;
+}
+
+.forgot:active,
+.forgot:hover {
+	opacity: 1;
+	text-decoration: none;
+}
+
+.forgot {
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	color: #6f7a85;
+	opacity: .9;
+	text-decoration: none;
+}
+
+* {
+	font-family: "Montserrat", sans-serif;
+}
+
+.HRMLogo {
+	color: #fff;
+	padding-left: 10px;
+	border-left: 4px solid #18d26e;
+	font-size: 0.911em;
+	text-decoration: none;
+	text-align: center;
+}
+
+.HeadingHRMLogo {
+	font-size: 2em;
+	line-height: 1;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding-left: 10px;
+	text-align: left;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px #cccccc;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #cccccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #aaaaaa;
+}
+.text-center.heading.processleave-heading {
+	margin-top: 12px;
+}
+.heading {
+	font-weight: bold;
+	color: #1e2833;
+}
+
+.changePasswordDiv {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 6em;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.chnagePasswordInnerDiv {
+	background-color: white;
+	color: #1e2833;
+	width: 81vh;
+	height: fit-content;
+	border-radius: 4px;
+	padding: 12px;
+	left: auto;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+}
+
+.closeButton {
+	color:#1e2833;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	margin-right: 0.2em;
+}
+
+.closeButton:hover, .closeButton:focus {
+	color: blue;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.changePasswordForm {
+	padding: 20px;
+}
+
+.custom-form-group {
+	width: 100%;
+	height: 2em;
+	display: inline-flex;
+}
+
+.label {
+	width: 50%;
+	font-size: 1.5em;
+	padding: 0em 15em 1em 0em;
+	color: #1e2833;
+}
+
+.button {
+	min-width: 160px;
+	width: 15vw;
+	margin: 2em 0.5em 0.5em 4.5em;
+	background-color: #1e2833;
+}
+
+.field {
+	width: 50%
+}
+
+@media (min-width: 1024px) {
+	html {
+		font-size: 14.7px;
+	}
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 13px;
+	}
+}
+
+.changepasswordLabels.label {
+	font-weight: normal;
+	font-size: 1em!important;
+	padding: 0em 12em 0em 0em!important;
+}
+
+button.btn.btn-primary.float-left.button.btn-changepass {
+	min-width: 160px;
+	margin: 5px;
+	background-color: #1e2833;
+}
+
+.changepassword-button {
+	min-width: 160px;
+	background-color: #1e2833;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.changepassword-btngroup {
+	display: flex;
+	margin-top: 15px;
+}
+
+.clsErrorMessageBtnClose {
+	background: transparent;
+	outline: none;
+	border: none;
+	font-weight: 500;
+	cursor: pointer;
+	right: 40%;
+	align-items: right;
+	flex: 1;
+	float: right;
+}
+
+.clsErrorMessage {
+	color: #831b1b;
+	background: #be020247;
+	border-color:#be020247;
+}
+
+.clsInlineAlertMessage {
+	letter-spacing: 0.01em;
+	font-weight: 300;
+	font-size: 0.89em;
+	padding: 6px;
+	text-align: center;
+	font-weight: 500;
+	border: 0.4px solid;
+	border-radius: 4px;
+	margin-bottom: 1em;
+	display: none;
+}
+
+.clsSuccessMessage {
+	background: #118e1159;
+	color: #026b02;
+	border-color: #026b02;
+}

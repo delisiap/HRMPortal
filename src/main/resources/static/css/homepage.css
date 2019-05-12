@@ -1,0 +1,50 @@
+.carousel-inner img,
+.carousel-inner .item img,
+.carousel-inner .item.active img {
+	height: -webkit-fill-available;
+	width: auto;
+	margin: auto 0 auto auto;
+}
+
+#myCarousel {
+	height: inherit;
+}
+
+.homepage-img1 {
+	background-color: #5f411d;
+}
+
+.homepage-img2 {
+	background-color: #8e6440;
+}
+
+.homepage-img3 {
+	background-color: #cec8ca;
+}
+
+.carousel-control {
+	background-image: linear-gradient(to right,rgba(0,0,0,0.7) 0,rgba(0,0,0,.0007) 100%);
+}
+
+.carousel-caption h3, .carousel-caption p {
+	text-align: left;
+}
+
+.carousel-caption {
+	left: 13%;
+}
+
+#header #logo span {
+	font-size: 34px;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+.clsDetails {
+	font-size: 1.09em;
+	letter-spacing: 0.1px;
+}
